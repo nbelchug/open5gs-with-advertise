@@ -13,7 +13,7 @@ Install Open5GS, UERANSIM with 2 UEs:
 ```bash
 kubectl create namespace open5gs
 kubectl label namespace open5gs istio-injection=enabled --overwrite
-helm repo add open5gs https://pnivaggi.github.io/calisti-5g-charts/
+helm repo add open5gs https://nbelchug.github.io/open5gs-with-advertise
 helm install open5gs open5gs/open5gs --values https://nbelchug.github.io/open5gs-with-advertise/open5gs-values.yaml --namespace open5gs
 sleep 5 && kubectl wait pods --all=True -n open5gs --for=condition=Ready --timeout=240s
 helm install ueransim-gnb open5gs/ueransim-gnb --version 0.2.5 --values https://nbelchug.github.io/open5gs-with-advertise/gnb-ues-values.yaml --namespace open5gs
