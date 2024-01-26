@@ -18,3 +18,12 @@ helm install open5gs open5gs/open5gs --values https://nbelchug.github.io/open5gs
 sleep 5 && kubectl wait pods --all=True -n open5gs --for=condition=Ready --timeout=240s
 helm install ueransim-gnb open5gs/ueransim-gnb --version 0.2.5 --values https://nbelchug.github.io/open5gs-with-advertise/gnb-ues-values.yaml --namespace open5gs
 ```
+
+## Add helm chart changes for publish
+
+```bash
+helm package charts/open5gs
+helm package charts/ueransim-gnb
+helm package charts/ueransim-ues
+helm repo index --url https://nbelchug.github.io/open5gs-with-advertise .
+```
