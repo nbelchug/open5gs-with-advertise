@@ -5442,4 +5442,4 @@ paths:
         default:
           $ref: '#/components/responses/default'
 servers:
-- url: http://open5gs-smf-sbi.open5gs:7777
+- url: http://open5gs-smf-sbi.open5gs:80
