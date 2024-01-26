@@ -1,3 +1,4 @@
+# other parameters is directly injected in the cnf value files
 populate:
   enabled: true
   initCommands:
