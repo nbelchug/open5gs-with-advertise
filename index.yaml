@@ -3,7 +3,7 @@ entries:
   open5gs:
   - apiVersion: v2
     appVersion: 2.4.11
-    created: "2024-01-26T16:27:46.214043555Z"
+    created: "2024-01-26T16:35:17.931915822Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -95,7 +95,7 @@ entries:
       repository: file://../open5gs-webui
       version: ~2.0.0
     description: 'Helm chart to deploy Open5gs services on Kubernetes. '
-    digest: 98b22cc2986f5307e43f015289c1eb2a4a4ccd6bb179798a4dcc3832d4330b55
+    digest: 4181baa7df031078f9b6c91a6f723b76aa153319ced89fe41227c8ca260b5a64
     home: https://github.com/gradiant/openverso-charts
     icon: https://open5gs.org/assets/img/open5gs-logo.png
     keywords:
@@ -108,6 +108,68 @@ entries:
     sources:
     - http://open5gs.org
     urls:
-    - https://pnivaggi.github.io/calisti-5g-charts/open5gs-2.0.11.tgz
+    - https://nbelchug.github.io/open5gs-with-advertise/open5gs-2.0.11.tgz
     version: 2.0.11
-generated: "2024-01-26T16:27:46.176411368Z"
+  ueransim-gnb:
+  - annotations:
+      category: apps
+    apiVersion: v2
+    appVersion: 3.2.6
+    created: "2024-01-26T16:35:17.933376266Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: ueransim gNodeB for 5G RAN simulation
+    digest: ebfa51fbf4d5f13454ad959d54c12ef70e1d3c7f46d14a1cc7c0f5f8ceefa480
+    home: https://github.com/aligungr/UERANSIM
+    icon: https://github.com/aligungr/UERANSIM/raw/master/.github/logo.png
+    keywords:
+    - apps
+    - gradiant
+    - k8s
+    maintainers:
+    - email: cgiraldo@gradiant.org
+      name: cgiraldo
+    - email: avrodriguez@gradiant.org
+      name: avrodriguez
+    name: ueransim-gnb
+    sources:
+    - https://github.com/aligungr/UERANSIM
+    urls:
+    - https://nbelchug.github.io/open5gs-with-advertise/ueransim-gnb-0.2.5.tgz
+    version: 0.2.5
+  ueransim-ues:
+  - annotations:
+      category: apps
+    apiVersion: v2
+    appVersion: 3.2.6
+    created: "2024-01-26T16:35:17.93463419Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: ueransim UEs for 5G RAN simulation
+    digest: fc93271d60e90be8e508b15d844063b5c9a8c38b67b02c365678c0a1f390a903
+    home: https://github.com/aligungr/UERANSIM
+    icon: https://github.com/aligungr/UERANSIM/raw/master/.github/logo.png
+    keywords:
+    - apps
+    - gradiant
+    - k8s
+    maintainers:
+    - email: cgiraldo@gradiant.org
+      name: cgiraldo
+    - email: avrodriguez@gradiant.org
+      name: avrodriguez
+    name: ueransim-ues
+    sources:
+    - https://github.com/aligungr/UERANSIM
+    urls:
+    - https://nbelchug.github.io/open5gs-with-advertise/ueransim-ues-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-01-26T16:35:17.893831807Z"
